@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backlink-price-checker"
+version = "0.1.0"
+description = "Open-source backlink price checker: compare guest post and link insertion prices across link marketplaces with your own API keys."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "LinkAcquire", email = "linkacquire@mailo.com" }]
+keywords = ["backlink price checker", "guest post price checker", "backlinks", "guest posts", "link building", "seo", "link insertion", "guest post marketplace"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://linkacquire.com/open-source/"
+Source = "https://github.com/jayxconnect/backlink-price-checker"
+"Hosted version" = "https://linkacquire.com"
+
+[project.scripts]
+bpc = "backlink_price_checker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

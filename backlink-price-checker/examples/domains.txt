@@ -1,0 +1,4 @@
+# One domain or URL per line. Optionally add the price you were quoted.
+example-news.com 250
+https://www.another-blog.net/some-post
+third-site.org
